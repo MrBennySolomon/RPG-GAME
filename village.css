@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.flex {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #64C2B5;
+
+
+
+}
+
+.village-name {
+  width: 100%;
+  height: 20%;
+  background-color: #5377AA;
+  color: #64C2B5;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.monsters {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 80%;
+  background-color: #64C2B5;
+  color: white;
+  font-size: 2rem;
+}
+
+.chooseMonster {
+  background-color: red;
+}
+.monsters1 {
+  background: url(./assest/monster1.png) no-repeat center center/contain;
+}
+.monsters2 {
+  background: url(./assest/monster2.png) no-repeat center center/contain;
+}
+.monsters3 {
+  background: url(./assest/monster3.png) no-repeat center center/contain;
+}
+.monsters1,
+.monsters2,
+.monsters3 {
+  width: 40vmin;
+  height: 40vmin;
+  background-color: #5377AA;
+  text-align: center;
+  color: #64C2B5;
+
+}
+.replace{
+  background-color: red;
+}
+.choose-monster-button{
+  
+  margin-top: 6rem;
+  width: 10rem;
+  height: 3rem;
+  background-color: rgb(247, 238, 238);
+}
+.choose-monster-button:hover{
+  background-color: red;
+  color: white;
+}
+
+.glow {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: #64C2B5;
+  background-color: #64C2B5;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+  .glow:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowingbn5 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .glow:active {
+    color: #fff;
+  }
+  
+  .glow:active:after {
+    background: transparent;
+  }
+  
+  .glow:hover:before {
+    opacity: 1;
+  }
+  
+  .glow:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5377AA;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  .map-img:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(/map-img.png) no-repeat center center/cover;;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    
+  }
+  .backToMap{
+    height: 2rem;
+    width: 3rem;
+    background: #5377AA;
+    border: none;
+
+  }
+  .goToStore{
+    height: 2rem;
+    width: 3rem;
+    background: #5377AA;
+    border: none;
+  } 
+  .flexbuttons{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 2rem;
+    /* flex-direction: column; */
+  }
