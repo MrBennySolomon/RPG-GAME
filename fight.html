@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>monster-game</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/location.css" />
+    <script src="models.js" defer></script>
+    <script src="view.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="fight.js" defer></script>
+  </head>
+
+  <body>
+    <div class="containerAllThePage">
+      <div class="monsterTurn">
+        <div id="monster-damage"></div>
+      </div>
+      <div class="optionsForBoth">
+        <button class="designn" id="attack-button">Attack</button>
+        <button class="designn" id="run-button">run away</button>
+        <button class="designn" id="village-button">go back</button>
+        <button class="designn" id="new-game-button">new Game</button>
+      </div>
+      <div class="playerTurn">
+        <div id="player-damage"></div>
+      </div>
+      <div class="tableStats">
+        <div class="container">
+          <div class="containerPlayer">
+            <div class="playerName">
+              <p>monster</p>
+              <div class="status">
+                <div id="monster-health-label">hp</div>
+              </div>
+            </div>
+            <div class="playerName">
+              <p>player</p>
+              <div id="player-health-label">hp</div>
+            </div>
+          </div>
+          <div class="containerMonster"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

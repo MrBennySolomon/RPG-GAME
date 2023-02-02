@@ -150,7 +150,7 @@ function animateInfo(uiElement , messege , keep){
 }
 
 newButton.addEventListener("click" , ()=>{
-    location.href = './intro.html';
+    location.href = './index.html';
 });
 
 villageButton.addEventListener("click" , ()=>{
